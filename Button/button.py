@@ -1,0 +1,17 @@
+import tkinter
+from tkinter import *
+
+win = Tk()
+
+
+def pr():
+    print("Hello world")
+
+
+win.geometry("400x400")
+b = Button(win, text="Button", command=pr, padx=30, pady=10, activeforeground="red")
+b.place(x=200, y=200)
+
+win.mainloop()
+
+#  pack(), grid(row=1, column=1), place(x=100, y=200)
