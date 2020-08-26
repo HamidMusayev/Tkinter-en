@@ -12,5 +12,4 @@ cb.pack()
 cb2 = Checkbutton(win, text="Video", offvalue=0, onvalue=1, height=5, width=10, variable=c2)
 cb2.pack()
 
-
 win.mainloop()
