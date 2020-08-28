@@ -5,6 +5,7 @@
 
 If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
 # Contents
+- [Standart attributes](#Standart-attributes)
 - [Buttons](#Button)
 - [Canvas](#Canvas)
 - [Check button](#Check-button)
@@ -19,7 +20,9 @@ If you appreciate the content 📖, support projects visibility, give 👍| ⭐|
 - [Windows](#Windows)
 - [Bonus](#Bonus)
 
-## Buttons
+## Standart-attributes
+
+## Button
 
 ## Canvas
 
@@ -45,4 +48,4 @@ If you appreciate the content 📖, support projects visibility, give 👍| ⭐|
 
 ## Bonus
 ### More references
-<a href="https://web.archive.org/web/20190524140835/https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">Tkinter 8.5</a> reference
+- <a href="https://web.archive.org/web/20190524140835/https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">Tkinter 8.5</a> reference
