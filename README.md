@@ -20,7 +20,7 @@ If you appreciate the content 📖, support projects visibility, give 👍| ⭐|
 - [Windows](#Windows)
 - [Bonus](#Bonus)
 
-# Standart-attributes
+## Standart-attributes
 Before we look at the widgets, let's take a look at how some of their common attributes-such as sizes, colors and fonts-are specified.
 
 Each widget has a set of options that affect its appearance and behavior-attributes such as fonts, colors, sizes, text labels, and such.
@@ -29,20 +29,35 @@ You can specify options when calling the widget's constructor using keyword argu
 
 After you have created a widget, you can later change any option by using the widget's .config() method. You can retrieve the current setting of any option by using the widget's .cget() method. See Section 26, “Universal widget methods” for more on these methods.
 
-- [Dimensions](Dimensions)
-- [The coordinate system](The coordinate system)
-- [Colors](Colors)
-- [Type fonts](Type fonts)
-- [Anchors](Anchors)
-- [Relief styles](Relief styles)
-- [Bitmaps](Bitmaps)
-- [Cursors](Cursors)
-- [Images](Images)
-- [Geometry strings](Geometry strings)
-- [Window names](Window names)
-- [Cap and join styles](Cap and join styles)
-- [Dash patterns](Dash patterns)
-- [Matching stipple patterns](Matching stipple patterns)
+- [Dimensions](#Dimensions)
+- [The coordinate system](#The coordinate system)
+- [Colors](#Colors)
+- [Type fonts](#Type fonts)
+- [Anchors](#Anchors)
+- [Relief styles](#Relief styles)
+- [Bitmaps](#Bitmaps)
+- [Cursors](#Cursors)
+- [Images](#Images)
+- [Geometry strings](#Geometry strings)
+- [Window names](#Window names)
+- [Cap and join styles](#Cap and join styles)
+- [Dash patterns](#Dash patterns)
+- [Matching stipple patterns](#Matching stipple patterns)
+
+### Dimensions
+### The coordinate system
+### Colors
+### Type fonts
+### Anchors
+### Relief styles
+### Bitmaps
+### Cursors
+### Images
+### Geometry strings
+### Window names
+### Cap and join styles
+### Dash patterns
+### Matching stipple patterns
 
 ## Button
 
