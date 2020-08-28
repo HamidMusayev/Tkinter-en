@@ -45,6 +45,14 @@ After you have created a widget, you can later change any option by using the wi
 - [Matching stipple patterns](#Matching-stipple-patterns)
 
 ### Dimensions
+Various lengths, widths, and other dimensions of widgets can be described in many different units.
+
+If you set a dimension to an integer, it is assumed to be in pixels.
+
+You can specify units by setting a dimension to a string containing a number followed by:
+
+<tbody><tr><td align="left" valign="top"><code class="code">c</code></td><td align="left">Centimeters</td></tr><tr><td align="left" valign="top"><code class="code">i</code></td><td align="left">Inches</td></tr><tr><td align="left" valign="top"><code class="code">m</code></td><td align="left">Millimeters</td></tr><tr><td align="left" valign="top"><code class="code">p</code></td><td align="left">Printer's points (about 1/72″)</td></tr></tbody>
+
 ### The-coordinate-system
 ### Colors
 ### Type-fonts
