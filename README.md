@@ -3,8 +3,8 @@
 <a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a> is Python's de-facto standard GUI (Graphical User Interface) package.
 
 If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
-## Contents
-- [Button](#Button)
+# Contents
+- [Buttons](#Button)
 - [Canvas](#Canvas)
 - [Check button](#Check-button)
 - [Frames](#Frames)
@@ -17,3 +17,29 @@ If you appreciate the content 📖, support projects visibility, give 👍| ⭐|
 - [Text widgets](#Text-widgets)
 - [Windows](#Windows)
 - [Bonus](#Bonus)
+
+## Buttons
+
+## Canvas
+
+## Check-button
+
+## Frames
+
+## List-box
+
+## Menu
+
+## Message-box
+
+## Paned-window
+
+## Radio-button
+
+## Scrolls
+
+## Text-widgets
+
+## Windows
+
+## Bonus
