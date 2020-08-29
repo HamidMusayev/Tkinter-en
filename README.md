@@ -65,7 +65,7 @@ The base unit is the pixel, with the top left pixel having coordinates (0,0). Co
 
 ### Colors
 
-[Color chooser example](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
+[Color chooser example](https://github.com/hemidvs/Tkinter/blob/master/Color%20chooser/color_chooser.py)
 
 There are two general ways to specify colors in Tkinter.
 
