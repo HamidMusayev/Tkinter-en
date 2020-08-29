@@ -90,6 +90,8 @@ Depending on your platform, there may be up to three ways to specify type style.
   
   `font = tkFont.Font(option, ...)`
   
+   where the options include:
+  
 | Command | Description |
 | --- | --- |
 | `family` | The font family name as a string. |
@@ -98,8 +100,52 @@ Depending on your platform, there may be up to three ways to specify type style.
 | `slant` | 'italic' for italic, 'roman' for unslanted. |
 | `underline` | 1 for underlined text, 0 for normal. |
 | `overstrike` | 1 for overstruck text, 0 for normal. |
+
+   For example, to get a 36-point bold Helvetica italic face:
+   
+   `helv36 = tkFont.Font(family='Helvetica', size=36, weight='bold')`
   
-  where the options include:
+- If you are running under the X Window System, you can use any of the X font names. For example, the font named '-*-lucidatypewriter-medium-r-*-*-*-140-*-*-*-*-*-*' is a good fixed-width font for onscreen use. Use the xfontsel program to help you select pleasing fonts.
+  
+To get a list of all the families of fonts available on your platform, call this function:
+  
+  `tkFont.families()`
+  
+The return value is a list of strings. Note: You must create your root window before calling this function.
+
+These methods are defined on all `Font` objects:
+
+`.actual(option=None)`
+
+If you pass no arguments, you get back a dictionary of the font's actual attributes, which may differ from the ones you requested. To get back the value of an attribute, pass its name as an argument.
+
+`.cget(option)`
+
+Returns the value of the given option.
+
+`.configure(option, ...)`
+
+Use this method to change one or more options on a font. For example, if you have a Font object called titleFont, if you call titleFont.configure(family='times', size=18), that font will change to 18pt Times and any widgets that use that font will change too.
+
+`.copy()`
+
+Returns a copy of a Font object.
+
+`.measure(text)`
+
+Pass this method a string, and it will return the number of pixels of width that string will take in the font. Warning: some slanted characters may extend outside this area.
+
+`.metrics(option)`
+
+If you call this method with no arguments, it returns a dictionary of all the font metrics. You can retrieve the value of just one metric by passing its name as an argument. Metrics include:
+
+| Command | Description |
+| --- | --- |
+| `ascent` | Number of pixels of height between the baseline and the top of the highest ascender. |
+| `descent` | Number of pixels of height between the baseline and the bottom of the lowest ascender. |
+| `fixed` | This value is 0 for a variable-width font and 1 for a monospaced font. |
+| `linespace` | Number of pixels of height total. This is the leading of type set solid in the given font. |
+
 ### Anchors
 ### Relief-styles
 ### Bitmaps
