@@ -51,6 +51,13 @@ If you set a dimension to an integer, it is assumed to be in pixels.
 
 You can specify units by setting a dimension to a string containing a number followed by:
 
+| Command | Description |
+| --- | --- |
+| `c` | Centimeters |
+| `i` | Inches |
+| `m` | Millimeters |
+| `p` | Printer's points (about 1/72″) |
+
 
 ### The-coordinate-system
 ### Colors
