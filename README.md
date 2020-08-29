@@ -153,7 +153,7 @@ These constants are given as compass points, where north is up and west is to th
 
 The anchor constants are shown in this diagram:
 
-
+<img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/anchors.png" align="center" width="750">
 ### Relief-styles
 ### Bitmaps
 ### Cursors
