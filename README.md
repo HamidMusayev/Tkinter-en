@@ -147,6 +147,13 @@ If you call this method with no arguments, it returns a dictionary of all the fo
 | `linespace` | Number of pixels of height total. This is the leading of type set solid in the given font. |
 
 ### Anchors
+The Tkinter module defines a number of anchor constants that you can use to control where items are positioned relative to their context. For example, anchors can specify where a widget is located inside a frame when the frame is bigger than the widget.
+
+These constants are given as compass points, where north is up and west is to the left.
+
+The anchor constants are shown in this diagram:
+
+
 ### Relief-styles
 ### Bitmaps
 ### Cursors
