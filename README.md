@@ -64,6 +64,9 @@ As in most contemporary display systems, the origin of each coordinate system is
 The base unit is the pixel, with the top left pixel having coordinates (0,0). Coordinates that you specify as integers are always expressed in pixels, but any coordinate may be specified as a dimensioned quantity.
 
 ### Colors
+
+[Color chooser example](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
+
 There are two general ways to specify colors in Tkinter.
 
 - You can use a string specifying the proportion of red, green, and blue in hexadecimal digits:
@@ -78,7 +81,9 @@ For example, '#fff' is white, '#000000' is black, '#000fff000' is pure green, an
 
 - You can also use any locally defined standard color name. The colors 'white', 'black', 'red', 'green', 'blue', 'cyan', 'yellow', and 'magenta' will always be available. Other names may work, depending on your local installation.
 
-### Type-fonts - [Examples]()
+### Type-fonts
+
+[Example](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
 
 Depending on your platform, there may be up to three ways to specify type style.
 
