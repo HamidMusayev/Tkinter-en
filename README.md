@@ -60,6 +60,9 @@ You can specify units by setting a dimension to a string containing a number fol
 
 
 ### The-coordinate-system
+As in most contemporary display systems, the origin of each coordinate system is at its upper left corner, with the x coordinate increasing toward the right, and the y coordinate increasing toward the bottom.
+The base unit is the pixel, with the top left pixel having coordinates (0,0). Coordinates that you specify as integers are always expressed in pixels, but any coordinate may be specified as a dimensioned quantity.
+
 ### Colors
 ### Type-fonts
 ### Anchors
