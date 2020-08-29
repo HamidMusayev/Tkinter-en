@@ -196,7 +196,8 @@ Anchors are also used to define where text is positioned relative to a reference
 ## Text-widgets
 
 ## Windows
-
+root.resizable(False, False) 
 ## Bonus
 ### More references
 - <a href="https://web.archive.org/web/20190524140835/https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">Tkinter 8.5</a> reference
+- <a href="https://coderslegacy.com/python/python-gui/">CodersLegacy</a> blogs Python GUI
