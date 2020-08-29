@@ -78,7 +78,8 @@ For example, '#fff' is white, '#000000' is black, '#000fff000' is pure green, an
 
 - You can also use any locally defined standard color name. The colors 'white', 'black', 'red', 'green', 'blue', 'cyan', 'yellow', and 'magenta' will always be available. Other names may work, depending on your local installation.
 
-### Type-fonts
+### Type-fonts - [Examples]()
+
 Depending on your platform, there may be up to three ways to specify type style.
 
 - As a tuple whose first element is the font family, followed by a size (in points if positive, in pixels if negative), optionally followed by a string containing one or more of the style modifiers bold, italic, underline, and overstrike.
@@ -86,6 +87,7 @@ Depending on your platform, there may be up to three ways to specify type style.
   Examples: ('Helvetica', '16') for a 16-point Helvetica regular; ('Times', '24', 'bold italic') for a 24-point Times bold italic. For a 20-pixel Times bold font, use ('Times', -20, 'bold').
   
 - You can create a “font object” by importing the tkFont module and using its Font class constructor:
+  
   `import tkFont`
   
   `font = tkFont.Font(option, ...)`
@@ -104,9 +106,7 @@ Depending on your platform, there may be up to three ways to specify type style.
    For example, to get a 36-point bold Helvetica italic face:
    
    `helv36 = tkFont.Font(family='Helvetica', size=36, weight='bold')`
-  
-- If you are running under the X Window System, you can use any of the X font names. For example, the font named '-*-lucidatypewriter-medium-r-*-*-*-140-*-*-*-*-*-*' is a good fixed-width font for onscreen use. Use the xfontsel program to help you select pleasing fonts.
-  
+    
 To get a list of all the families of fonts available on your platform, call this function:
   
   `tkFont.families()`
@@ -153,9 +153,9 @@ These constants are given as compass points, where north is up and west is to th
 
 The anchor constants are shown in this diagram:
 
-<img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/anchors.png" align="center" width="200">
+<img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/anchors.png" align="center" width="150">
 
-For example, if you create a small widget inside a large frame and use the anchor=tk.SE option, the widget will be placed in the bottom right corner of the frame. If you used anchor=tk.N instead, the widget would be centered along the top edge.
+For example, if you create a small widget inside a large frame and use the `anchor=tk.SE` option, the widget will be placed in the bottom right corner of the frame. If you used `anchor=tk.N` instead, the widget would be centered along the top edge.
 
 Anchors are also used to define where text is positioned relative to a reference point. For example, if you use `tk.CENTER` as a text anchor, the text will be centered horizontally and vertically around the reference point. Anchor `tk.NW` will position the text so that the reference point coincides with the northwest (top left) corner of the box containing the text. Anchor `tk.W` will center the text vertically around the reference point, with the left edge of the text box passing through that point, and so on.
 ### Relief-styles
