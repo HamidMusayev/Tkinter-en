@@ -167,7 +167,7 @@ Anchors are also used to define where text is positioned relative to a reference
 
 The relief style of a widget refers to certain simulated 3-D effects around the outside of the widget. Here is a screen shot of a row of buttons exhibiting all the possible relief styles:
 
-<img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/anchors.png" align="center" width="150">
+<img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="150">
 ### Bitmaps
 ### Cursors
 ### Images
