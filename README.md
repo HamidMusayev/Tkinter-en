@@ -64,6 +64,21 @@ As in most contemporary display systems, the origin of each coordinate system is
 The base unit is the pixel, with the top left pixel having coordinates (0,0). Coordinates that you specify as integers are always expressed in pixels, but any coordinate may be specified as a dimensioned quantity.
 
 ### Colors
+There are two general ways to specify colors in Tkinter.
+
+- You can use a string specifying the proportion of red, green, and blue in hexadecimal digits:
+
+| Command | Description |
+| --- | --- |
+| `#rgb` | Four bits per color |
+| `#rrggbb` | Eight bits per color |
+| `#rrrgggbbb` | Twelve bits per color |
+
+For example, '#fff' is white, '#000000' is black, '#000fff000' is pure green, and '#00ffff' is pure cyan (green plus blue).
+
+- You can also use any locally defined standard color name. The colors 'white', 'black', 'red', 'green', 'blue', 'cyan', 'yellow', and 'magenta' will always be available. Other names may work, depending on your local installation.
+
+
 ### Type-fonts
 ### Anchors
 ### Relief-styles
