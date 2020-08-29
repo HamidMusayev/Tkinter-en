@@ -78,8 +78,28 @@ For example, '#fff' is white, '#000000' is black, '#000fff000' is pure green, an
 
 - You can also use any locally defined standard color name. The colors 'white', 'black', 'red', 'green', 'blue', 'cyan', 'yellow', and 'magenta' will always be available. Other names may work, depending on your local installation.
 
-
 ### Type-fonts
+Depending on your platform, there may be up to three ways to specify type style.
+
+- As a tuple whose first element is the font family, followed by a size (in points if positive, in pixels if negative), optionally followed by a string containing one or more of the style modifiers bold, italic, underline, and overstrike.
+
+  Examples: ('Helvetica', '16') for a 16-point Helvetica regular; ('Times', '24', 'bold italic') for a 24-point Times bold italic. For a 20-pixel Times bold font, use ('Times', -20, 'bold').
+  
+- You can create a “font object” by importing the tkFont module and using its Font class constructor:
+  `import tkFont`
+  
+  `font = tkFont.Font(option, ...)`
+  
+| Command | Description |
+| --- | --- |
+| `family` | The font family name as a string. |
+| `size` | The font height as an integer in points. To get a font n pixels high, use -n. |
+| `weight` | 'bold' for boldface, 'normal' for regular weight. |
+| `slant` | 'italic' for italic, 'roman' for unslanted. |
+| `underline` | 1 for underlined text, 0 for normal. |
+| `overstrike` | 1 for overstruck text, 0 for normal. |
+  
+  where the options include:
 ### Anchors
 ### Relief-styles
 ### Bitmaps
