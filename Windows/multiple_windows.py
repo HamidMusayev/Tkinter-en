@@ -2,10 +2,11 @@ import tkinter
 from tkinter import *
 
 # creating multiple windows
-win = Tk()
-win.geometry("400x400")
-win.title("first")
+window = Tk()
+
 top = Toplevel()
 top.title("second")
+# for make clickable first window top.grab_set()
 
-win.mainloop()
+window.bind("<FocusIn>", window.focus_set())
+window.mainloop()
