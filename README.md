@@ -5,7 +5,10 @@
 
 If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
 # Contents
-- [Standart attributes](#Standart-attributes)
+- [Standard attributes](#Standart-attributes)
+- [Importing tkinter and ttk](Importing-tkinter-and-ttk)
+- [Styling tkk widgets](Styling-tkk-widgets)
+- [About ttk module](#About-ttk-module)
 - [Buttons](#Button)
 - [Canvas](#Canvas)
 - [Check button](#Check-button)
@@ -20,7 +23,7 @@ If you appreciate the content 📖, support projects visibility, give 👍| ⭐|
 - [Windows](#Windows)
 - [Bonus](#Bonus)
 
-## Standart-attributes
+## Standard-attributes
 Before we look at the widgets, let's take a look at how some of their common attributes-such as sizes, colors and fonts-are specified.
 
 Each widget has a set of options that affect its appearance and behavior-attributes such as `font`, `color`, `size`, `text`, `label`, and such.
@@ -60,6 +63,7 @@ You can specify units by setting a dimension to a string containing a number fol
 
 
 ### The-coordinate-system
+
 As in most contemporary display systems, the origin of each coordinate system is at its upper left corner, with the x coordinate increasing toward the right, and the y coordinate increasing toward the bottom.
 The base unit is the pixel, with the top left pixel having coordinates (0,0). Coordinates that you specify as integers are always expressed in pixels, but any coordinate may be specified as a dimensioned quantity.
 
@@ -175,7 +179,7 @@ The relief style of a widget refers to certain simulated 3-D effects around the 
 ### Window-names
 ### Cap-and-join-styles
 ### Dash-patterns
-### Matching-stipplep-atterns
+### Matching-stipple-patterns
 
 ## Button
 
