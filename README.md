@@ -6,9 +6,9 @@
 If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
 # Contents
 - [Standard attributes](#Standart-attributes)
-- [Importing tkinter and ttk](Importing-tkinter-and-ttk)
-- [Styling tkk widgets](Styling-tkk-widgets)
 - [About ttk module](#About-ttk-module)
+- [Importing tkinter and ttk](#Importing-tkinter-and-ttk)
+- [Styling tkk widgets](#Styling-tkk-widgets)
 - [Buttons](#Button)
 - [Canvas](#Canvas)
 - [Check button](#Check-button)
@@ -182,6 +182,15 @@ The relief style of a widget refers to certain simulated 3-D effects around the 
 ### Cap-and-join-styles
 ### Dash-patterns
 ### Matching-stipple-patterns
+
+
+
+
+## About-ttk-module
+
+## Importing-tkinter-and-ttk
+
+## Styling-tkk-widgets
 
 ## Button
 
