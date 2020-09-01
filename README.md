@@ -13,6 +13,7 @@ If you appreciate the content 📖, support projects visibility, give 👍| ⭐|
 - [Canvas](#Canvas)
 - [Check button](#Check-button)
 - [Frames](#Frames)
+- [Label](#Label)
 - [List box](#List-box)
 - [Menu](#Menu)
 - [Message box](#Message-box)
@@ -198,11 +199,58 @@ There are quite a number of different mouse cursors available. Their names and g
 here. The exact graphic may vary according to your operating system.
 
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursor.PNG?raw=true" width="400">
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursors.PNG?raw=true" width="400">
 
 ### Images
+There are three general methods for displaying graphic images in your Tkinter application.
 
+- To display bitmap (two-color) images in the `.xbm` format, refer to [The BitmapImage class](#The-BitmapImage-class)
+
+- To display full-color images in the `.gif`, `.pgm`, or .ppm format, refer to [The PhotoImage class](#The-PhotoImage-class)
+
+- The Python Imaging Library (PIL) supports images in a much wider variety of formats. Its ImageTk class is specifically designed for displaying images within Tkinter applications.
+
+#### The-BitmapImage-class
+To display a two-color image in the .xbm format, you will need this constructor:
+
+`tk.BitmapImage(file=f[, background=b][, foreground=c])`
+
+where f is the name of the .xbm image file.
+
+Normally, foreground (1) bits in the image will be displayed as black pixels, and background (0) bits in the image will be transparent. To change this behavior, use the optional `background=b` option to
+set the background to color b, and the optional `foreground=c` option to set the foreground to color c. For color specification, see Section [Colors](#Colors).
+
+This constructor returns a value that can be used anywhere Tkinter expects an image. For example, to display an image as a label, use a Label widget (see Section 12, [Label widget](#Label) and supply the `BitmapImage` object as the value of the `image` option:
+
+`logo = tk.BitmapImage('logo.xbm', foreground='red')
+Label(image=logo).grid()`
+
+#### The-PhotoImage-class
+To display a color image in `.gif`, `.pgm`, or `.ppm` format, you will need this constructor:
+
+`tk.PhotoImage(file=f)`
+
+where f is the name of the image file. The constructor returns a value that can be used anywhere Tkinter
+expects an image.
 
 ### Geometry-strings
+A geometry string is a standard way of describing the size and location of a top-level window on a
+desktop.
+
+A geometry string has this general form: 
+
+`'wxh±x±y'`
+
+where:
+
+- The w and h parts give the window width and height in pixels. They are separated by the character 'x'.
+
+- If the next part has the form +x, it specifies that the left side of the window should be x pixels from the left side of the desktop. If it has the form -x, the right side of the window is x pixels from the right side of the desktop.
+
+- If the next part has the form +y, it specifies that the top of the window should be y pixels below the top of the desktop. If it has the form -y, the bottom of the window will be y pixels above the bottom edge of the desktop.
+
+For example, a window created with `geometry='120x50-0+20'` would be 120 pixels wide by 50 pixels high, and its top right corner will be along the right edge of the desktop and 20 pixels below the top edge.
+
 ### Window-names
 ### Cap-and-join-styles
 ### Dash-patterns
@@ -224,6 +272,8 @@ here. The exact graphic may vary according to your operating system.
 ## Check-button
 
 ## Frames
+
+## Label
 
 ## List-box
 
