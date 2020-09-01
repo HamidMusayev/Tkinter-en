@@ -32,6 +32,8 @@ You can specify options when calling the widget's constructor using keyword argu
 
 After you have created a widget, you can later change any option by using the widget's `.config()` method.
 
+You can retrieve the current setting of any option by using the widget's `.cget()` method.
+
 - [Dimensions](#Dimensions)
 - [The coordinate system](#The-coordinate-system)
 - [Colors](#Colors)
@@ -86,6 +88,9 @@ There are two general ways to specify colors in Tkinter.
 For example, '#fff' is white, '#000000' is black, '#000fff000' is pure green, and '#00ffff' is pure cyan (green plus blue).
 
 - You can also use any locally defined standard color name. The colors 'white', 'black', 'red', 'green', 'blue', 'cyan', 'yellow', and 'magenta' will always be available. Other names may work, depending on your local installation.
+
+You can browse colors [here](https://www.google.com/search?q=color+picker) or Google Material design colors [here](https://material.io/resources/color/#!/?view.left=0&view.right=0).
+
 
 ### Type-fonts
 
@@ -158,6 +163,7 @@ If you call this method with no arguments, it returns a dictionary of all the fo
 | `linespace` | Number of pixels of height total. This is the leading of type set solid in the given font. |
 
 ### Anchors
+
 The Tkinter module defines a number of anchor constants that you can use to control where items are positioned relative to their context. For example, anchors can specify where a widget is located inside a frame when the frame is bigger than the widget.
 
 These constants are given as compass points, where north is up and west is to the left.
@@ -169,11 +175,13 @@ The anchor constants are shown in this diagram:
 For example, if you create a small widget inside a large frame and use the `anchor=tk.SE` option, the widget will be placed in the bottom right corner of the frame. If you used `anchor=tk.N` instead, the widget would be centered along the top edge.
 
 Anchors are also used to define where text is positioned relative to a reference point. For example, if you use `tk.CENTER` as a text anchor, the text will be centered horizontally and vertically around the reference point. Anchor `tk.NW` will position the text so that the reference point coincides with the northwest (top left) corner of the box containing the text. Anchor `tk.W` will center the text vertically around the reference point, with the left edge of the text box passing through that point, and so on.
+
 ### Relief-styles
 
 The relief style of a widget refers to certain simulated 3-D effects around the outside of the widget. Here is a screen shot of a row of buttons exhibiting all the possible relief styles:
 
 <img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="400">
+
 ### Bitmaps
 ### Cursors
 ### Images
