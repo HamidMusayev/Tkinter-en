@@ -183,6 +183,11 @@ The relief style of a widget refers to certain simulated 3-D effects around the 
 <img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="400">
 
 ### Bitmaps
+For bitmap options in widgets, these bitmaps are guaranteed to be available:
+
+<img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="400">
+
+
 ### Cursors
 ### Images
 ### Geometry-strings
