@@ -5,7 +5,7 @@
 <a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a> is Python's de-facto standard GUI (Graphical User Interface) package.
 
 
-If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
+> If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
 # Contents
 - [Standard attributes](#Standart-attributes)
 - [About ttk module](#About-ttk-module)
