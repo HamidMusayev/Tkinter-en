@@ -187,8 +187,16 @@ For bitmap options in widgets, these bitmaps are guaranteed to be available:
 
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/bitmap.PNG?raw=true" width="400">
 
+The graphic above shows Button widgets bearing the standard bitmaps. From left to right, they are
+`'error'`, `'gray75'`, `'gray50'`, `'gray25'`, `'gray12'`, `'hourglass'`, `'info'`, `'questhead'`,
+`'question'`, and `'warning'`.
+You can use your own bitmaps. Any file in .xbm (X bit map) format will work. In place of a standard
+bitmap name, use the string '@' followed by the pathname of the .xbm file.
 
 ### Cursors
+There are quite a number of different mouse cursors available. Their names and graphics are shown
+here. The exact graphic may vary according to your operating system.
+
 ### Images
 ### Geometry-strings
 ### Window-names
