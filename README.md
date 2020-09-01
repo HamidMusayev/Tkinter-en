@@ -197,6 +197,8 @@ bitmap name, use the string '@' followed by the pathname of the .xbm file.
 There are quite a number of different mouse cursors available. Their names and graphics are shown
 here. The exact graphic may vary according to your operating system.
 
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursor.PNG?raw=true" width="400">
+
 ### Images
 ### Geometry-strings
 ### Window-names
