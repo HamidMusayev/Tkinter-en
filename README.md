@@ -45,7 +45,9 @@ Before we look at the widgets, let's take a look at how some of their common att
 
 Each widget has a set of options that affect its appearance and behavior-attributes such as `font`, `color`, `size`, `text`, `label`, and such.
 
-You can specify options when calling the widget's constructor using keyword arguments such as `Button(window, text='Ok', fg='Blue')`.
+You can specify options when calling the widget's constructor using keyword arguments such as 
+
+`Button(window, text='Ok', fg='Blue')`.
 
 After you have created a widget, you can later change any option by using the widget's `.config()` method.
 
