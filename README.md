@@ -12,8 +12,8 @@
 - [Importing tkinter and ttk](#Importing-tkinter-and-ttk)
 - [All tkk widgets list](#All-tkk-widgets-list)
 > tkk Widgets set
-- [tkk.Button](#tkk.Button)
-- [tkk.Check button](#tkk.Check-button)
+- [tkk.Button](#Button)
+- [tkk.Check button](#Check-button)
 - [tkk.Combo box](#tkk.Combo-box)
 - [tkk.Entry](#tkk.Entry)
 - [tkk.Frame](#tkk.Frame)
@@ -278,8 +278,8 @@ For example, a window created with `geometry='120x50-0+20'` would be 120 pixels 
 
 
 
-## tkk.Button
-## tkk.Check-button
+## Button
+## Check-button
 ## tkk.Combo-box
 ## tkk.Entry
 ## tkk.Frame
