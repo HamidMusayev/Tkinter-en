@@ -10,7 +10,7 @@
 - [Standard attributes](#Standart-attributes)
 - [About ttk Themed widgets](#About-ttk-Themed-widgets)
 - [Importing tkinter and ttk](#Importing-tkinter-and-ttk)
-- [The tkk widget set](#The-tkk-widget-set)
+- [All tkk widgets list](#All-tkk-widgets-list)
 > tkk Widgets set
 - [tkk.Button](#tkk.Button)
 - [tkk.Check button](#tkk.Check-button)
@@ -270,7 +270,11 @@ For example, a window created with `geometry='120x50-0+20'` would be 120 pixels 
 ### Dash-patterns
 ### Matching-stipple-patterns
 
+## About-ttk-Themed-widgets
 
+## Importing-tkinter-and-ttk
+
+## All-tkk-widgets-list
 
 
 
