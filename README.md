@@ -8,20 +8,34 @@
 > If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
 # Contents
 - [Standard attributes](#Standart-attributes)
-- [About ttk module](#About-ttk-module)
+- [About ttk Themed widgets](#About-ttk-Themed-widgets)
 - [Importing tkinter and ttk](#Importing-tkinter-and-ttk)
+- [The tkk widget set](#The-tkk-widget-set)
+> tkk Widgets set
+- [tkk.Button](#tkk.Button)
+- [tkk.Check button](#tkk.Check-button)
+- [tkk.Combo box](#tkk.Combo-box)
+- [tkk.Entry](#tkk.Entry)
+- [tkk.Frame](#tkk.Frame)
+- [tkk.Label](#tkk.Label)
+- [tkk.Label frame](#tkk.Label-frame)
+- [tkk.Menu button](#tkk.Menu-button)
+- [tkk.Notebook](#tkk.Notebook)
+- [tkk.Paned window](#tkk.Paned-window)
+- [tkk.Progressbar](#tkk.Progressbar)
+- [tkk.Radio button](#tkk.Radio-button)
+- [tkk.Scale](#tkk.Scale)
+- [tkk.Scrollbar](#tkk.Scrollbar)
+- [tkk.Separator](#tkk.Separator)
+- [tkk.Sizegrip](#tkk.Sizegrip)
+- [tkk.Tree view](#tkk.Tree-view)
 - [Styling tkk widgets](#Styling-tkk-widgets)
-- [Buttons](#Button)
+- [Methods common to all tkk widgets](#Methods-common-to-all-tkk-widgets)
+> other tkinter widgets
 - [Canvas](#Canvas)
-- [Check button](#Check-button)
-- [Frames](#Frames)
-- [Label](#Label)
 - [List box](#List-box)
 - [Menu](#Menu)
 - [Message box](#Message-box)
-- [Paned window](#Paned-window)
-- [Radio button](#Radio-button)
-- [Scrolls](#Scrolls)
 - [Text widgets](#Text-widgets)
 - [Windows](#Windows)
 - [Bonus](#Bonus)
@@ -197,8 +211,7 @@ You can use your own bitmaps. Any file in .xbm (X bit map) format will work. In 
 bitmap name, use the string '@' followed by the pathname of the .xbm file.
 
 ### Cursors
-There are quite a number of different mouse cursors available. Their names and graphics are shown
-here. The exact graphic may vary according to your operating system.
+There are quite a number of different mouse cursors available. Their names and graphics are shown here. The exact graphic may vary according to your operating system.
 
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursor.PNG?raw=true" width="400">
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursors.PNG?raw=true" width="400">
@@ -236,8 +249,7 @@ where f is the name of the image file. The constructor returns a value that can 
 expects an image.
 
 ### Geometry-strings
-A geometry string is a standard way of describing the size and location of a top-level window on a
-desktop.
+A geometry string is a standard way of describing the size and location of a top-level window on a desktop.
 
 A geometry string has this general form: 
 
@@ -261,38 +273,28 @@ For example, a window created with `geometry='120x50-0+20'` would be 120 pixels 
 
 
 
-## About-ttk-module
 
-## Importing-tkinter-and-ttk
+## tkk.Button
+## tkk.Check-button
+## tkk.Combo-box
+## tkk.Entry
+## tkk.Frame
+## tkk.Label
+## tkk.Label-frame
+## tkk.Menu-button
+## tkk.Notebook
+## tkk.Paned-window
+## tkk.Progressbar
+## tkk.Radio-button
+## tkk.Scale
+## tkk.Scrollbar
+## tkk.Separator
+## tkk.Sizegrip
+## tkk.Tree-view
+## #Styling-tkk-widgets
+## Methods-common-to-all-tkk-widgets
 
-## Styling-tkk-widgets
 
-## Button
-
-## Canvas
-
-## Check-button
-
-## Frames
-
-## Label
-
-## List-box
-
-## Menu
-
-## Message-box
-
-## Paned-window
-
-## Radio-button
-
-## Scrolls
-
-## Text-widgets
-
-## Windows
-root.resizable(False, False) 
 ## Bonus
 ### More references
 - <a href="https://web.archive.org/web/20190524140835/https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">Tkinter 8.5</a> reference
