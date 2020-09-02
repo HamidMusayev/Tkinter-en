@@ -7,7 +7,7 @@
 
 > If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
 # Contents
-- [Standard attributes](#Standart-attributes)
+- [Standard attributes](#Standard-attributes)
 - [About ttk Themed widgets](#About-ttk-Themed-widgets)
 - [Importing tkinter and ttk](#Importing-tkinter-and-ttk)
 - [All tkk widgets list](#All-tkk-widgets-list)
@@ -41,6 +41,7 @@
 - [Bonus](#Bonus)
 
 ## Standard-attributes
+
 Before we look at the widgets, let's take a look at how some of their common attributes-such as sizes, colors and fonts-are specified.
 
 Each widget has a set of options that affect its appearance and behavior-attributes such as `font`, `color`, `size`, `text`, `label`, and such.
@@ -69,6 +70,7 @@ You can retrieve the current setting of any option by using the widget's `.cget(
 - [Matching stipple patterns](#Matching-stipple-patterns)
 
 ### Dimensions
+
 Various lengths, widths, and other dimensions of widgets can be described in many different units.
 
 If you set a dimension to an integer, it is assumed to be in pixels.
@@ -112,6 +114,8 @@ You can browse colors [here](https://www.google.com/search?q=color+picker) or Go
 
 
 ### Type-fonts
+
+You can browse all fonts [here](https://fonts.google.com).
 
 [Fonts Example](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
 
@@ -202,6 +206,7 @@ The relief style of a widget refers to certain simulated 3-D effects around the 
 <img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="400">
 
 ### Bitmaps
+
 For bitmap options in widgets, these bitmaps are guaranteed to be available:
 
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/bitmap.PNG?raw=true" width="400">
@@ -213,12 +218,14 @@ You can use your own bitmaps. Any file in .xbm (X bit map) format will work. In 
 bitmap name, use the string '@' followed by the pathname of the .xbm file.
 
 ### Cursors
+
 There are quite a number of different mouse cursors available. Their names and graphics are shown here. The exact graphic may vary according to your operating system.
 
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursor.PNG?raw=true" width="400">
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursors.PNG?raw=true" width="400">
 
 ### Images
+
 There are three general methods for displaying graphic images in your Tkinter application.
 
 - To display bitmap (two-color) images in the `.xbm` format, refer to [The BitmapImage class](#The-BitmapImage-class)
@@ -228,6 +235,7 @@ There are three general methods for displaying graphic images in your Tkinter ap
 - The Python Imaging Library (PIL) supports images in a much wider variety of formats. Its ImageTk class is specifically designed for displaying images within Tkinter applications.
 
 #### The-BitmapImage-class
+
 To display a two-color image in the .xbm format, you will need this constructor:
 
 `tk.BitmapImage(file=f[, background=b][, foreground=c])`
@@ -243,6 +251,7 @@ This constructor returns a value that can be used anywhere Tkinter expects an im
 Label(image=logo).grid()`
 
 #### The-PhotoImage-class
+
 To display a color image in `.gif`, `.pgm`, or `.ppm` format, you will need this constructor:
 
 `tk.PhotoImage(file=f)`
@@ -251,6 +260,7 @@ where f is the name of the image file. The constructor returns a value that can 
 expects an image.
 
 ### Geometry-strings
+
 A geometry string is a standard way of describing the size and location of a top-level window on a desktop.
 
 A geometry string has this general form: 
