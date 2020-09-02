@@ -14,21 +14,21 @@
 > tkk Widgets set
 - [tkk.Button](#Button)
 - [tkk.Check button](#Check-button)
-- [tkk.Combo box](#tkk.Combo-box)
-- [tkk.Entry](#tkk.Entry)
-- [tkk.Frame](#tkk.Frame)
-- [tkk.Label](#tkk.Label)
-- [tkk.Label frame](#tkk.Label-frame)
-- [tkk.Menu button](#tkk.Menu-button)
-- [tkk.Notebook](#tkk.Notebook)
-- [tkk.Paned window](#tkk.Paned-window)
-- [tkk.Progressbar](#tkk.Progressbar)
-- [tkk.Radio button](#tkk.Radio-button)
-- [tkk.Scale](#tkk.Scale)
-- [tkk.Scrollbar](#tkk.Scrollbar)
-- [tkk.Separator](#tkk.Separator)
-- [tkk.Sizegrip](#tkk.Sizegrip)
-- [tkk.Tree view](#tkk.Tree-view)
+- [tkk.Combo box](#Combo-box)
+- [tkk.Entry](#Entry)
+- [tkk.Frame](#Frame)
+- [tkk.Label](#Label)
+- [tkk.Label frame](#Label-frame)
+- [tkk.Menu button](#Menu-button)
+- [tkk.Notebook](#Notebook)
+- [tkk.Paned window](#Paned-window)
+- [tkk.Progressbar](#Progressbar)
+- [tkk.Radio button](#Radio-button)
+- [tkk.Scale](#Scale)
+- [tkk.Scrollbar](#Scrollbar)
+- [tkk.Separator](#Separator)
+- [tkk.Sizegrip](#Sizegrip)
+- [tkk.Tree view](#Tree-view)
 - [Styling tkk widgets](#Styling-tkk-widgets)
 - [Methods common to all tkk widgets](#Methods-common-to-all-tkk-widgets)
 > other tkinter widgets
@@ -280,22 +280,22 @@ For example, a window created with `geometry='120x50-0+20'` would be 120 pixels 
 
 ## Button
 ## Check-button
-## tkk.Combo-box
-## tkk.Entry
-## tkk.Frame
-## tkk.Label
-## tkk.Label-frame
-## tkk.Menu-button
-## tkk.Notebook
-## tkk.Paned-window
-## tkk.Progressbar
-## tkk.Radio-button
-## tkk.Scale
-## tkk.Scrollbar
-## tkk.Separator
-## tkk.Sizegrip
-## tkk.Tree-view
-## #Styling-tkk-widgets
+## Combo-box
+## Entry
+## Frame
+## Label
+## Label-frame
+## Menu-button
+## Notebook
+## Paned-window
+## Progressbar
+## Radio-button
+## Scale
+## Scrollbar
+## Separator
+## Sizegrip
+## Tree-view
+## Styling-tkk-widgets
 ## Methods-common-to-all-tkk-widgets
 
 
