@@ -369,7 +369,7 @@ To use ttk, you will need to know these things.
 
 [Importing tkinter and ttk](#Importing-tkinter-and-ttk): Setting up your program to use ttk.
 
-[All tkk widgets list](#All-tkk-widgets-list): The new and replaced ttk widgets
+[All tkk widgets list](#All-tkk-widgets-list): The new and replaced ttk widgets.
 
 [Styling-tkk-widgets](#Styling-tkk-widgets)
 
