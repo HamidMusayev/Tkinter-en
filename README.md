@@ -313,11 +313,19 @@ For pleasant and effective rendering of diagrams, sometimes it is a good idea to
 
 This illustration shows how Tkinter's cap and join options work with a line made of two connected line segments. Small red circles show the location of the points that define this line.
 
-<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/capjoin.PNG?raw=true" width="450">
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/capjoin.PNG?raw=true" width="400">
 
 ### Dash-patterns
 
+A number of widgets allow you to specify a dashed outline. The dash and dash offset options give you fine control over the exact pattern of the dashes.
 
+**dash**
+
+This option is specified as a tuple of integers. The first integer specifies how many pixels should be drawn. The second integer specifies how many pixels should be skipped before starting to draw again, and so on. When all the integers in the tuple are exhausted, they are reused in the same order until the border is complete.
+
+For example, `dash=(3,5)` produces alternating 3-pixel dashes separated by 5-pixel gaps. A value of `dash=(7,1,1,1)` produces a dash-and-dot pattern, with the dash seven times as long as the dot or the gaps around the dot. A value of `dash=(5,)` produces alternating five-pixel dashes and five-pixel gaps.
+
+`dashoff`
 
 ### Matching-stipple-patterns
 
