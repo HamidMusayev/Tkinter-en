@@ -313,6 +313,8 @@ For pleasant and effective rendering of diagrams, sometimes it is a good idea to
 
 This illustration shows how Tkinter's cap and join options work with a line made of two connected line segments. Small red circles show the location of the points that define this line.
 
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/capjoin.PNG?raw=true" width="450">
+
 ### Dash-patterns
 
 
