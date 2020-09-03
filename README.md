@@ -245,7 +245,7 @@ where f is the name of the .xbm image file.
 Normally, foreground (1) bits in the image will be displayed as black pixels, and background (0) bits in the image will be transparent. To change this behavior, use the optional `background=b` option to
 set the background to color b, and the optional `foreground=c` option to set the foreground to color c. For color specification, see Section [Colors](#Colors).
 
-This constructor returns a value that can be used anywhere Tkinter expects an image. For example, to display an image as a label, use a Label widget (see Section 12, [Label widget](#Label) and supply the `BitmapImage` object as the value of the `image` option:
+This constructor returns a value that can be used anywhere Tkinter expects an image. For example, to display an image as a label, use a [tkk.Label widget](#Label) and supply the `BitmapImage` object as the value of the `image` option:
 
 `logo = tk.BitmapImage('logo.xbm', foreground='red')
 Label(image=logo).grid()`
