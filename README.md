@@ -341,8 +341,37 @@ Here is an example. The left-hand screen shot shows two adjacent `100×100` squa
 
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/stripplepatterns.PNG?raw=true" width="400">
 
-
 ## About-ttk-Themed-widgets
+
+Starting with Tk 8.5, the ttk module became available. This module replaces much (but not all) of the original Tkinter machinery. Use this module to gain these advantages:
+
+- **Platform-specific appearance**. In releases before Tk 8.5, one of the commonest complaints about Tk applications was that they did not conform to the style of the various platforms.
+
+The ttk module allows you to write your application in a generic way, yet your application can look like a Windows application under Windows, like a MacOS app under MacOS, and so on, without any change to your program.
+
+Each possible different appearance is represented by a named `ttk theme`. For example, the `classic` theme gives you the appearance of the original Tkinter widgets described in the previous sections.
+
+- **Simplification and generalization of state-specific widget behavior.** In the basic Tkinter world, there are a lot of widget options that specify how the widget should look or behave depending on various conditions.
+
+For example, the `tk.Button` widget has several different options that control the foreground `(text)` color.
+
+- The `activeforeground` color option applies when the cursor is over the button.
+- The `disabledforeground` color is used when the widget is disabled.
+- The widget will have the `foreground` color when the other conditions don't apply.
+
+The ttk module collapses a lot of these special cases into a simple two-part system:
+
+- Every widget has a number of different states, and each state can be turned on or off independently of the others. Examples of states are: disabled, active, and focus.
+
+- You can set up a style map that specifies that certain options will be set to certain values depending on some state or some combination of the widget's states.
+
+To use ttk, you will need to know these things.
+
+[Importing tkinter and ttk](#Importing-tkinter-and-ttk): Setting up your program to use ttk.
+
+[All tkk widgets list](#All-tkk-widgets-list): The new and replaced ttk widgets
+
+[Styling-tkk-widgets](#Styling-tkk-widgets)
 
 ## Importing-tkinter-and-ttk
 
