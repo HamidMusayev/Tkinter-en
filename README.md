@@ -335,6 +335,13 @@ For example, for options `dash=(5, 1, 2, 1)` and `dashoff=3`, the first pattern 
 
 ### Matching-stipple-patterns
 
+This may seem like an incredibly picky style point, but if you draw a graphic that has two objects with stippled patterns, a real professional will make sure that the patterns align along their boundary.
+
+Here is an example. The left-hand screen shot shows two adjacent `100×100` squares stippled with the `“gray12”` pattern, but the right-hand square is offset vertically by one pixel. The short black line in the center of the figure is drawn along the boundary of the two figures.
+
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/stripplepatterns.PNG?raw=true" width="400">
+
+
 ## About-ttk-Themed-widgets
 
 ## Importing-tkinter-and-ttk
