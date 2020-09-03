@@ -278,8 +278,45 @@ where:
 For example, a window created with `geometry='120x50-0+20'` would be 120 pixels wide by 50 pixels high, and its top right corner will be along the right edge of the desktop and 20 pixels below the top edge.
 
 ### Window-names
+
+The term window describes a rectangular area on the desktop.
+
+- A top-level or root window is a window that has an independent existence under the window manager. It is decorated with the window manager's decorations, and can be moved and resized independently. Your application can use any number of top-level windows.
+
+- The term `“window”` also applies to any widget that is part of a top-level window. Tkinter names all these windows using a hierarchical window path name.
+
+- The root window's name is '.'.
+
+- Child windows have names of the form `'.n'`, where n is some integer in string form. For example, a window named `'.135932060'` is a child of the root window `('.')`.
+
+- Child windows within child windows have names of the form `'p.n'` where `p` is the name of the parent window and `n` is some integer. For example, a window named `'.135932060.137304468'` has parent window `'.135932060'`, so it is a grandchild of the root window.
+
+- The relative name of a window is the part past the last '.' in the path name. To continue the previous example, the grandchild window has a relative name '137304468'.
+
+To get the path name for a widget w, use `str(w)`.
+
+See also Section [Methods common to all tkk widgets](#Methods-common-to-all-tkk-widgets) for methods you can use to operate on window names, especially the .winfo_name, .winfo_parent, and .winfo_pathname methods.
+
 ### Cap-and-join-styles
+
+For pleasant and effective rendering of diagrams, sometimes it is a good idea to pay attention to cap and join styles.
+
+1. The cap style of a line is the shape of the end of the line. Styles are:
+- `tk.BUTT:` The end of the line is cut off square at a line that passes through the endpoint.
+- `tk.PROJECTING:` The end of the line is cut off square, but the cut line projects past the endpoint a distance equal to half the line's width.
+- `tk.ROUND:` The end describes a semicircle centered on the endpoint.
+
+2. The join style describes the shape where two line segments meet at an angle.
+- `tk.ROUND:` The join is a circle centered on the point where the adjacent line segments meet.
+- `tk.BEVEL:` A flat facet is drawn at an angle intermediate between the angles of the adjacent lines.
+- `tk.MITER:` The edges of the adjacent line segments are continued to meet at a sharp point.
+
+This illustration shows how Tkinter's cap and join options work with a line made of two connected line segments. Small red circles show the location of the points that define this line.
+
 ### Dash-patterns
+
+
+
 ### Matching-stipple-patterns
 
 ## About-ttk-Themed-widgets
