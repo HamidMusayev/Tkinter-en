@@ -331,7 +331,7 @@ To start the dash pattern in a different point of cycle instead of at the beginn
 
 For example, for options `dash=(5, 1, 2, 1)` and `dashoff=3`, the first pattern produced will be: 2 on, 1 off, 2 on, and 1 off. Subsequent patterns will be 5 on, 1 off, 2 on, and 1 off. Here is a screen shot of a line drawn with this combination of options:
 
-<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/capjoin.PNG?raw=true" width="400">
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/dash.PNG?raw=true" width="400">
 
 ### Matching-stipple-patterns
 
