@@ -386,7 +386,7 @@ There are different ways to import the ttk module.
           "path": "dist/app-*.js"
         }
       ],
-    ```
+```
 
 ## All-tkk-widgets-list
 
