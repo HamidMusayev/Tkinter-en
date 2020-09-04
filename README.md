@@ -7,6 +7,7 @@
 
 > If you appreciate the content 📖, support projects visibility, give 👍| ⭐| 👏
 # Contents
+> Introduction
 - [Standard attributes](#Standard-attributes)
 - [About ttk Themed widgets](#About-ttk-Themed-widgets)
 - [Importing tkinter and ttk](#Importing-tkinter-and-ttk)
