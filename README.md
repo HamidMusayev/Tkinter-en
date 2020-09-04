@@ -430,8 +430,25 @@ The ttk module contains different versions of most of the standard Tkinter widge
 - ttk.Sizegrip” [Read](#Sizegrip).
 - ttk.Tree view” [Read](#Tree-view).
 
-
 ## Button
+
+To create a `ttk.Button` widget:
+
+```
+w = ttk.Button(parent, option=value, ...)
+```
+
+Here are the options for the ttk.Button widget.
+
+| Command | Description |
+| --- | --- |
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. |
+| `command` | A function to be called when the button is pressed |
+| `compound` | If you provide both `image` and `text` options, the compound option specifies the position of the image relative to the text. The value may be `tk.TOP` (image above text), `tk.BOTTOM` (image below text), `tk.LEFT` (image to the left of the text), or `tk.RIGHT` (image to the right of the text). When you provide both image and text options but don't specify a compound option, the image will appear and the text will not. |
+| `cursor` | The cursor that will appear when the mouse is over the button; go to [Cursors](#Cursors) |
+| `image` | An image to appear on the button; go to [Images](#Images) |
+
+
 ## Check-button
 ## Combo-box
 ## Entry
