@@ -345,7 +345,7 @@ Here is an example. The left-hand screen shot shows two adjacent `100×100` squa
 
 Starting with Tk 8.5, the ttk module became available. This module replaces much (but not all) of the original Tkinter machinery. Use this module to gain these advantages:
 
-- **Platform-specific appearance**. In releases before Tk 8.5, one of the commonest complaints about Tk applications was that they did not conform to the style of the various platforms.
+- **Platform-specific appearance.** In releases before Tk 8.5, one of the commonest complaints about Tk applications was that they did not conform to the style of the various platforms.
 
 The ttk module allows you to write your application in a generic way, yet your application can look like a Windows application under Windows, like a MacOS app under MacOS, and so on, without any change to your program.
 
@@ -374,6 +374,19 @@ To use ttk, you will need to know these things.
 [Styling-tkk-widgets](#Styling-tkk-widgets)
 
 ## Importing-tkinter-and-ttk
+
+There are different ways to import the ttk module.
+
+- If you prefer that all the widgets and other features of Tkinter and ttk be in your global namespace, use this form of import:
+
+```diff
+      "size-limit": [
+        {
+    +     "limit": "1 s",
+          "path": "dist/app-*.js"
+        }
+      ],
+    ```
 
 ## All-tkk-widgets-list
 
