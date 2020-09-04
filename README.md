@@ -379,13 +379,9 @@ There are different ways to import the ttk module.
 
 - If you prefer that all the widgets and other features of Tkinter and ttk be in your global namespace, use this form of import:
 
-```diff
-      "size-limit": [
-        {
-    +     "limit": "1 s",
-          "path": "dist/app-*.js"
-        }
-      ],
+```
+from Tkinter import *
+from ttk import *
 ```
 
 ## All-tkk-widgets-list
