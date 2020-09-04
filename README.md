@@ -228,13 +228,13 @@ There are quite a number of different mouse cursors available. Their names and g
 
 There are three general methods for displaying graphic images in your Tkinter application.
 
-- To display bitmap (two-color) images in the `.xbm` format, refer to [The BitmapImage class](#The-BitmapImage-class)
+- To display bitmap (two-color) images in the `.xbm` format, refer to The BitmapImage class.
 
-- To display full-color images in the `.gif`, `.pgm`, or .ppm format, refer to [The PhotoImage class](#The-PhotoImage-class)
+- To display full-color images in the `.gif`, `.pgm`, or .ppm format, refer to The PhotoImage class.
 
 - The Python Imaging Library (PIL) supports images in a much wider variety of formats. Its ImageTk class is specifically designed for displaying images within Tkinter applications.
 
-#### The-BitmapImage-class
+- **The-BitmapImage-class**
 
 To display a two-color image in the .xbm format, you will need this constructor:
 
@@ -250,7 +250,7 @@ This constructor returns a value that can be used anywhere Tkinter expects an im
 `logo = tk.BitmapImage('logo.xbm', foreground='red')
 Label(image=logo).grid()`
 
-#### The-PhotoImage-class
+- **The-PhotoImage-class**
 
 To display a color image in `.gif`, `.pgm`, or `.ppm` format, you will need this constructor:
 
