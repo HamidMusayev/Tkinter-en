@@ -384,8 +384,49 @@ from Tkinter import *
 from ttk import *
 ```
 
+It is important to do these two imports in this order, so that all the widget types from ttk replace the equivalent widgets from Tkinter. For example, all your `Button` widgets will come from ttk and not Tkinter.
+
+-  In more complex applications, where you are using more than one imported module, it can greatly improve the readability of your code if you practice safe namespace hygiene: import all your modules using the `import module name` syntax. This requires just a bit more typing, but it has the great advantage that you can look at a reference to something and tell where it came from.
+
+We recommend this form of import:
+```
+import ttk
+```
+
+So after this import, `ttk.Label` is the `Label` widget constructor, `ttk.Button` is a `Button`, and so on.
+
+If you need to refer to items from the Tkinter module, it is available as `ttk.Tkinter`. For example, the anchor code for `northeast` is `ttk.Tkinter.NE`.
+
+You may instead import Tkinter separately in this way:
+
+```
+import Tkinter as tk
+```
+
+After this form of import, the code for `northeast` is `tk.NE`.
+
 ## All-tkk-widgets-list
 
+The ttk module contains different versions of most of the standard Tkinter widgets and a few new ones. These widgets replace the ones from Tkinter of the same name:
+
+- ttk.Button [Read](#Button).
+- ttk.Checkbutton” [Read](#Check-button).
+- ttk.Entry” [Read](#Entry).
+- ttk.Frame” [Read](#Frame).
+- ttk.Label” [Read](#Label).
+- ttk.LabelFrame” [Read](#Label-frame).
+- ttk.Menubutton” [Read](#Menu-button).
+- ttk.PanedWindow” [Read](#Paned-window).
+- ttk.Radiobutton” [Read](#Radio-button).
+- ttk.Scale” [Read](#Scale).
+- ttk.Scrollbar” [Read](#Scrollbar).
+> These widgets are new, and specific to ttk:
+- ttk.Combobox” [Read](#Combo-box).
+- ttk.Notebook” [Read](#Notebook).
+- ttk.Progressbar” [Read](#Progressbar).
+- ttk.Separator” [Read](#Separator).
+- ttk.Sizegrip” [Read](#Sizegrip).
+- ttk.Tree view” [Read](#Tree-view).
 
 
 ## Button
