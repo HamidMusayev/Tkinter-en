@@ -407,8 +407,9 @@ After this form of import, the code for `northeast` is `tk.NE`.
 
 ## All-tkk-widgets-list
 
-The ttk module contains different versions of most of the standard Tkinter widgets and a few new ones. These widgets replace the ones from Tkinter of the same name:
+The ttk module contains different versions of most of the standard Tkinter widgets and a few new ones. 
 
+> These widgets replace the ones from Tkinter of the same name:
 - ttk.Button [Read](#Button).
 - ttk.Checkbutton” [Read](#Check-button).
 - ttk.Entry” [Read](#Entry).
