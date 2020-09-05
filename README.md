@@ -447,6 +447,51 @@ Here are the options for the ttk.Button widget.
 | `compound` | If you provide both `image` and `text` options, the compound option specifies the position of the image relative to the text. The value may be `tk.TOP` (image above text), `tk.BOTTOM` (image below text), `tk.LEFT` (image to the left of the text), or `tk.RIGHT` (image to the right of the text). When you provide both image and text options but don't specify a compound option, the image will appear and the text will not. |
 | `cursor` | The cursor that will appear when the mouse is over the button; go to [Cursors](#Cursors) |
 | `image` | An image to appear on the button; go to [Images](#Images) |
+| `style` | The style to be used in rendering this button; go to [Styling tkk widgets](#Styling-tkk-widgets) |
+| `takefocus` | By default, a `ttk.Button` will be included in focus traversal. To remove the widget from focus traversal, use `takefocus=False`; go to [Focus: routing keyboard input](#coming soon) |
+| `text` | The text to appear on the button, as a string. |
+| `textvariable` | A variable that controls the text that appears on the button; go to [Control variables: the values behind the widgets](#coming soon) |
+| `underline` | If this option has a non negative value n, an underline will appear under the character at position n. |
+| `width` | If the label is text, this option specifies the absolute width of the text area on the button, as a number of characters; the actual width is that number multiplied by the average width of a character in the current font. For image labels, this option is ignored. The option may also be configured in a style |
+
+These options of the Tkinter `Button` widget are not supported by the `ttk.Button` constructor:
+
+**Tkinter Button options not in ttk.Button**
+
+| Command | Description |
+| --- | --- |
+| `activebackground` | Use a style map to control the `background` option; go to, [ttk style maps: dynamic appearance changes](#coming soon ttk element layer) |
+| `activeforeground` | Use a style map to control the `foreground` option. |
+| `anchor` | Configure this option using a style; go to [Styling tkk widgets](#Styling-tkk-widgets) Use this option to specify the position of the text when the `width` option allocates extra horizontal space. For example, if you specify options `width=20` and `compound=tk.RIGHT` on a button that displays both text and and image, and a style that specifies `anchor=tk.E (east)`, the image will be at the right-hand end of the twenty character space, with the text just to its left. When the button displays an image but no text, this option is ignored. |
+| `background or bg` | Configure the background option using a style. The bg abbreviation is not supported. |
+| `bitmap` | Not supported. |
+| `borderwidth or bd` | Configure the `borderwidth` option using a style. The `bd` abbreviation is not supported. |
+| `cursor` | The cursor that will appear when the mouse is over the checkbutton. |
+| `default` | Not supported. |
+| `disabledforeground` | Use a style map for the `foreground` option. |
+| `font` | Configure this option using a style. |
+| `foreground or fg` | Configure this option using a style. |
+| `height` | Not supported. |
+| `highlightbackground` | To control the color of the focus highlight when the button does not have focus, use a style map to control the `highlightcolor` option. |
+| `highlightcolor` | You may specify the default focus highlight color by setting this option in a style. You may also control the focus highlight color using a style map. |
+| `highlightthickness` | Configure this option using a style. This option may not work in all themes. |
+| `justify` | If the text contains newline `('\n')` characters, the text will occupy multiple lines on the button. The `justify` option controls how each line is positioned horizontally. Configure this option using a style; values may be `tk.LEFT`, `tk.CENTER`, or `tk.RIGHT` for lines that are left-aligned, centered, or right aligned, respectively. |
+| `overrelief` | Use a style map to control the relief option. |
+| `padx` | Not supported. |
+| `pady` | Not supported. |
+| `relief` | Configure this option using a style. |
+| `repeatdelay` | Not supported. |
+| `repeatinterval` | Not supported. |
+| `state` | In ttk, there is no option with this name. The state mechanism has been generalized. |
+| `wraplength` | If you use a style with this option set to some dimensions, the text will be sliced into pieces no longer than that dimension. |
+
+Methods on a `ttk.Button` include all those described in [Methods common to all tkk widgets](#Methods-common-to-all-tkk-widgets), plus:
+
+`.invoke()`
+
+Calls the button's `command` callback, and returns what that function returns. Has no effect if the button is disabled or there is no callback.
+
+The `.flash()` method of `Tkinter.Button` is not supported by the `ttk.Button` widget.
 
 
 ## Check-button
