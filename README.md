@@ -493,8 +493,38 @@ Calls the button's `command` callback, and returns what that function returns. H
 
 The `.flash()` method of `Tkinter.Button` is not supported by the `ttk.Button` widget.
 
-
 ## Check-button
+
+To create a ttk.Checkbutton widget as the child of a given parent widget:
+
+```
+w = ttk.Checkbutton(parent, option=value, ...)
+```
+
+Here are the options for the ttk.Checkbutton widget.
+
+| Command | Description |
+| --- | --- |
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. |
+| `command` | A function to be called whenever the state of this checkbutton changes. |
+| `compound` | This option specifies the relative position of the image relative to the text when you specify both. The value maybe `tk.TOP` (image above text), `tk.BOTTOM` (image below text), `tk.LEFT` (image to the left of the text), or `tk.RIGHT` (image to the right of the text). If you provide both image and text options but do not specify a value for compound, only the image will appear. |
+| `cursor` | The cursor that will appear when the mouse is over the checkbutton. |
+| `image` | An image to appear on the checkbutton |
+| `offvalue` | By default, when a checkbutton is in the off (unchecked) state, the value of the associated variable is 0. You can use the `offvalue` option to specify a different value for the off state. |
+| `onvalue` | By default,when a checkbutton is in the on (checked) state, the value of the associated variable is 1. You can use the `onvalue` option to specify a different value for the on state. |
+| `style` | The style to be used in rendering this checkbutton |
+| `takefocus` | By default, a ttk.Checkbutton will be included in focus traversal, To remove the widget from focus traversal, use `takefocus=False`. |
+| `text` | The text to appear on the checkbutton, as a string. |
+| `textvariable` | A variable that controls the text that appears on the checkbutton. |
+| `underline` | If this option has a non negative value n, an underline will appear under the text character at position `n` |
+| `variable` | A control variable that tracks the current state of the checkbutton; go to [Control variables](#coming soon). Normally you will use an
+`IntVar` here, use `.get` method to see value and the off and on values are 0 and 1, respectively. However, you may use a different control variable type, and specify the `offvalue` and `onvalue` options using values of that type. |
+| `width` | Use this option to specify a fixed width or a minimum width. The value is specified in characters; a positive value sets a fixed width of that many average characters, while a negative width sets a minimum width. For example, if an average character in the selected font is 10 pixels wide, option `width=8` will make the text label exactly 80 pixels wide; option `width=-8` will use 80 pixels or the length of the text, whichever is larger. You may also specify a width value in an associated style. If values are specified both in the widget constructor call and in the style, the former takes priority. |
+
+These options of the Tkinter `Checkbutton` widget are not supported by the `ttk.Checkbutton` widget constructor:
+
+**Tkinter Checkbutton options not in ttk.Checkbutton**
+
 ## Combo-box
 ## Entry
 ## Frame
