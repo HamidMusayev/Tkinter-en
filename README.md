@@ -517,13 +517,47 @@ Here are the options for the ttk.Checkbutton widget.
 | `text` | The text to appear on the checkbutton, as a string. |
 | `textvariable` | A variable that controls the text that appears on the checkbutton. |
 | `underline` | If this option has a non negative value n, an underline will appear under the text character at position `n` |
-| `variable` | A control variable that tracks the current state of the checkbutton; go to [Control variables](#coming soon). Normally you will use an
-`IntVar` here, use `.get` method to see value and the off and on values are 0 and 1, respectively. However, you may use a different control variable type, and specify the `offvalue` and `onvalue` options using values of that type. |
+| `variable` | A control variable that tracks the current state of the checkbutton; go to [Control variables](#coming soon). Normally you will use an `IntVar` here, use `.get` method to see value and the off and on values are 0 and 1, respectively. However, you may use a different control variable type, and specify the `offvalue` and `onvalue` options using values of that type. |
 | `width` | Use this option to specify a fixed width or a minimum width. The value is specified in characters; a positive value sets a fixed width of that many average characters, while a negative width sets a minimum width. For example, if an average character in the selected font is 10 pixels wide, option `width=8` will make the text label exactly 80 pixels wide; option `width=-8` will use 80 pixels or the length of the text, whichever is larger. You may also specify a width value in an associated style. If values are specified both in the widget constructor call and in the style, the former takes priority. |
 
 These options of the Tkinter `Checkbutton` widget are not supported by the `ttk.Checkbutton` widget constructor:
 
 **Tkinter Checkbutton options not in ttk.Checkbutton**
+
+| Command | Description |
+| --- | --- |
+| `activebackground` | Use a style map to control the background option. |
+| `activeforeground` | Use a style map to control the foreground option. |
+| `anchor` | Configure this option using a style. Use this option to specify the position of the text when the width option allocates extra horizontal space. For example, if you specify options `width=20` and `compound=tk.TOP` on a checkbutton that displays both text and and image, and a style that specifies `anchor=tk.E` (east), the image will be at the right-hand end of the twenty character space, with the text just below it. When a checkbutton displays an image but no text, this option is ignored. |
+| `background or bg` | Configure the background option using a style. The bg abbreviation is not supported. |
+| `bitmap` | Not supported. |
+| `borderwidth or bd` | Configure this option using a style. |
+| `disabledforeground` | Use a style map for the foreground option. |
+| `font` | Configure this option using a style |
+| `foreground or fg ` | Configure this option using a style |
+| `height` | Not supported |
+| `highlightbackground` | To control the color of the focus highlight when the checkbutton does not have focus, use a style map to control the `highlightcolor` option. |
+| `highlightcolor` | You may specify the default focus highlight color by setting this option in a style. You may also control the focus highlight color using a style map |
+| `highlightthickness` | Configure this option using a style. This option may not work in all themes. |
+| `indicatoron` | Not supported. |
+| `justify` | Controls how multiple lines are positioned horizontally relative to each other. Configure this option using a style; values may be `tk.LEFT`, `tk.CENTER`, or `tk.RIGHT` for left-aligned, centered, or right-aligned, respectively. |
+| `offrelief` | Not supported. |
+| `overrelief` | Use a style map to control the relief option. |
+| `padx` | Not supported |
+| `pady` | Not supported. |
+| `relief` | Use a style map to control the `relief` option. |
+| `selectcolor` | Not supported. |
+| `selectimage` | Not supported. |
+| `state` | In ttk, there is no option with this name. The state mechanism has been generalized. |
+| `wraplength` | If you use a style that has this option set to some dimension, the text will be sliced into pieces no longer than that dimension. |
+
+Methods on a `ttk.Checkbutton` include all those described in [Methods-common-to-all-tkk-widgets](#Methods-common-to-all-tkk-widgets), plus:
+
+`.invoke()`
+
+This method toggles the state of the checkbutton. If there is a command callback, it calls that callback, and returns whatever value the callback returned.
+
+Not supported are the following methods of the Tkinter Checkbutton widget: `.deselect()`, `.flash()`, `.select()`, and `.toggle()`. To change the state of a checkbutton through program control, use the `.set()` method of the associated control variable.
 
 ## Combo-box
 ## Entry
