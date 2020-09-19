@@ -526,6 +526,12 @@ These options of the Tkinter `Checkbutton` widget are not supported by the `ttk.
 **Tkinter Checkbutton options not in ttk.Checkbutton**
 
 ## Combo-box
+This widget is a combination of an Entry and a drop-down menu. In your application, you will see the usual text entry area, with a downward-pointing arrow. When the user clicks on the arrow, a drop-down menu appears. If the user clicks on one, that choice replaces the current contents of the entry. However, the user may still type text directly into the entry (when it has focus), or edit the current text.
+To create a ttk. Combobox widget as the child of a given parent widget:
+```
+w = ttk.Combobox(parent, option=value, ...)
+```
+
 ## Entry
 ## Frame
 ## Label
