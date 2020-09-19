@@ -561,12 +561,24 @@ Not supported are the following methods of the Tkinter Checkbutton widget: `.des
 
 ## Combo-box
 This widget is a combination of an Entry and a drop-down menu. In your application, you will see the usual text entry area, with a downward-pointing arrow. When the user clicks on the arrow, a drop-down menu appears. If the user clicks on one, that choice replaces the current contents of the entry. However, the user may still type text directly into the entry (when it has focus), or edit the current text.
+
 To create a ttk. Combobox widget as the child of a given parent widget:
 ```
 w = ttk.Combobox(parent, option=value, ...)
 ```
-
-
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. For an explanation of widget classes, see Section 27, “Standardizing appearance” (p.105).|
+| `cursor` | The cursor that will appear when the mouse is over the checkbutton;  See Sec-tion 5.8, “Cursors” (p.13).|
+| `exportselection` | By default, if you select text within an Entry widget, it is automatically exported to the clipboard. To avoid this exportation, use exportselection=0|
+| `height` | Use this option to specify a maximum number of rows that will appear in the drop-down menu; the default is  20. If there are more values than this number, thedrop-down menu will automatically include a vertical scrollbar. |
+| `justify` | This option specifies how the text will be positioned with in the entry area when it does not completely fill the area.Values may be tk.LEFT to left-justify ; tk.CENTER to center; or tk.RIGHT to right-justify. |
+| `postcommand` |You may use this option to supply a callback function that will be invoked when the user click son the down-arrow.This callback may change the values option; if so, the changes will appear in the drop-down menu.|
+| `style` |  The style to be used in rendering this checkbutton; see Section 49, “Using and customizing ttk styles” (p.147). |
+| `takefocus` | By default, a ttk. Checkbutton will be included in focus traversal; see Sec-tion 53, “Focus:routing keyboard input” (p.155). To remove the widget from focus traversal, use takefocus=Fals  |
+| `textvariable` | A variable that controls the text that appears in the entry area; see Section 52, “Control variables: the values behind the widgets” (p.153)
+|
+| `` |   |
+| `` |   |
+| `` |   |
 ## Entry
 ## Frame
 ## Label
