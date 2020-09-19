@@ -532,6 +532,7 @@ To create a ttk. Combobox widget as the child of a given parent widget:
 w = ttk.Combobox(parent, option=value, ...)
 ```
 
+
 ## Entry
 ## Frame
 ## Label
