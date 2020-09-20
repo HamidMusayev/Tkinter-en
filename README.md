@@ -574,11 +574,23 @@ w = ttk.Combobox(parent, option=value, ...)
 | `postcommand` |You may use this option to supply a callback function that will be invoked when the user click son the down-arrow.This callback may change the values option; if so, the changes will appear in the drop-down menu.|
 | `style` |  The style to be used in rendering this checkbutton; see Section 49, “Using and customizing ttk styles” (p.147). |
 | `takefocus` | By default, a ttk. Checkbutton will be included in focus traversal; see Sec-tion 53, “Focus:routing keyboard input” (p.155). To remove the widget from focus traversal, use takefocus=Fals  |
-| `textvariable` | A variable that controls the text that appears in the entry area; see Section 52, “Control variables: the values behind the widgets” (p.153)
-|
-| `` |   |
-| `` |   |
-| `` |   |
+| `textvariable` | A variable that controls the text that appears in the entry area; see Section 52, “Control variables: the values behind the widgets” (p.153) |
+| `validate` | You may use this option to request dynamic validation of the widget's text content. See Section 10.2, “Adding validation to an Entry widget” (p.45).  |
+| `validatecommand` | You may use this option to specify a callback function that dynamically validates the widget's text content. See Section 10.2, “Adding validation to an Entry widget” (p.45).  |
+| `values` | The choices that will appear in the drop-down menu, as a sequence of strings.|
+| `width` |This option specifies the width of the entry area as a number of characters. The actual width will be this number times the average width of a character in the effective font. The default value is 20.|
+| `xscrollcommand` | If the widget has an associated horizontal scrollbar, set this option to the. Set method of that scrollbar. |
+
+Methods on a ttk. Combobox include all those described in Section 46, “Methods common to all ttk widgets” (p.145), plus all the methods on theTkinter widget described in Section10, “The Entry wid-get” (p.41), plus:
+.current([index])
+To select one of the elements of the values option, pass the index of that element as the argument to this method. If you do not supply an argument, the returned valueis the in dexof the current entry text in the values list, or-1if the current entry text is not in the values list.
+.set(value) Set the current text in the widget to value. 
+The states of a ttk .Combobox widget affectits operation. To interrogate or change states, see the .in-state() and .state() methods in Section 46, “Methods common to all ttk widgets” (p.145)
+.•If the widgetis in the disabled state,no user action will change the contents.
+•If the widget is  in the! Disabled state and also the readonly state, the user may change the contents by using the drop-down menu, but may not directly edit the contents.
+
+
+
 ## Entry
 ## Frame
 ## Label
