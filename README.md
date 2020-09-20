@@ -560,6 +560,37 @@ This method toggles the state of the checkbutton. If there is a command callback
 Not supported are the following methods of the Tkinter Checkbutton widget: `.deselect()`, `.flash()`, `.select()`, and `.toggle()`. To change the state of a checkbutton through program control, use the `.set()` method of the associated control variable.
 
 ## Combo-box
+This widget is a combination of an Entry and a drop-down menu. In your application, you will see the usual text entry area, with a downward-pointing arrow. When the user clicks on the arrow, a drop-down menu appears. If the user clicks on one, that choice replaces the current contents of the entry. However, the user may still type text directly into the entry (when it has focus), or edit the current text.
+
+To create a ttk. Combobox widget as the child of a given parent widget:
+```
+w = ttk.Combobox(parent, option=value, ...)
+```
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. For an explanation of widget classes, see Section 27, “Standardizing appearance” (p.105).|
+| `cursor` | The cursor that will appear when the mouse is over the checkbutton;  See Sec-tion 5.8, “Cursors” (p.13).|
+| `exportselection` | By default, if you select text within an Entry widget, it is automatically exported to the clipboard. To avoid this exportation, use exportselection=0|
+| `height` | Use this option to specify a maximum number of rows that will appear in the drop-down menu; the default is  20. If there are more values than this number, thedrop-down menu will automatically include a vertical scrollbar. |
+| `justify` | This option specifies how the text will be positioned with in the entry area when it does not completely fill the area.Values may be tk.LEFT to left-justify ; tk.CENTER to center; or tk.RIGHT to right-justify. |
+| `postcommand` |You may use this option to supply a callback function that will be invoked when the user click son the down-arrow.This callback may change the values option; if so, the changes will appear in the drop-down menu.|
+| `style` |  The style to be used in rendering this checkbutton; see Section 49, “Using and customizing ttk styles” (p.147). |
+| `takefocus` | By default, a ttk. Checkbutton will be included in focus traversal; see Sec-tion 53, “Focus:routing keyboard input” (p.155). To remove the widget from focus traversal, use takefocus=Fals  |
+| `textvariable` | A variable that controls the text that appears in the entry area; see Section 52, “Control variables: the values behind the widgets” (p.153) |
+| `validate` | You may use this option to request dynamic validation of the widget's text content. See Section 10.2, “Adding validation to an Entry widget” (p.45).  |
+| `validatecommand` | You may use this option to specify a callback function that dynamically validates the widget's text content. See Section 10.2, “Adding validation to an Entry widget” (p.45).  |
+| `values` | The choices that will appear in the drop-down menu, as a sequence of strings.|
+| `width` |This option specifies the width of the entry area as a number of characters. The actual width will be this number times the average width of a character in the effective font. The default value is 20.|
+| `xscrollcommand` | If the widget has an associated horizontal scrollbar, set this option to the. Set method of that scrollbar. |
+
+Methods on a ttk. Combobox include all those described in Section 46, “Methods common to all ttk widgets” (p.145), plus all the methods on theTkinter widget described in Section10, “The Entry wid-get” (p.41), plus:
+.current([index])
+To select one of the elements of the values option, pass the index of that element as the argument to this method. If you do not supply an argument, the returned valueis the in dexof the current entry text in the values list, or-1if the current entry text is not in the values list.
+.set(value) Set the current text in the widget to value. 
+The states of a ttk .Combobox widget affectits operation. To interrogate or change states, see the .in-state() and .state() methods in Section 46, “Methods common to all ttk widgets” (p.145)
+.•If the widgetis in the disabled state,no user action will change the contents.
+•If the widget is  in the! Disabled state and also the readonly state, the user may change the contents by using the drop-down menu, but may not directly edit the contents.
+
+
+
 ## Entry
 ## Frame
 ## Label
