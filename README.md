@@ -560,6 +560,7 @@ This method toggles the state of the checkbutton. If there is a command callback
 Not supported are the following methods of the Tkinter Checkbutton widget: `.deselect()`, `.flash()`, `.select()`, and `.toggle()`. To change the state of a checkbutton through program control, use the `.set()` method of the associated control variable.
 
 ## Combo-box
+
 This widget is a combination of an Entry and a drop-down menu. In your application, you will see the usual text entry area, with a downward-pointing arrow. When the user clicks on the arrow, a drop-down menu appears. If the user clicks on one, that choice replaces the current contents of the entry. However, the user may still type text directly into the entry (when it has focus), or edit the current text.
 
 To create a ttk. Combobox widget as the child of a given parent widget:
@@ -581,13 +582,19 @@ w = ttk.Combobox(parent, option=value, ...)
 | `width` |This option specifies the width of the entry area as a number of characters. The actual width will be this number times the average width of a character in the effective font. The default value is 20.|
 | `xscrollcommand` | If the widget has an associated horizontal scrollbar, set this option to the. Set method of that scrollbar. |
 
-Methods on a ttk. Combobox include all those described in Section 46, “Methods common to all ttk widgets” (p.145), plus all the methods on theTkinter widget described in Section10, “The Entry wid-get” (p.41), plus:
-.current([index])
-To select one of the elements of the values option, pass the index of that element as the argument to this method. If you do not supply an argument, the returned valueis the in dexof the current entry text in the values list, or-1if the current entry text is not in the values list.
-.set(value) Set the current text in the widget to value. 
-The states of a ttk .Combobox widget affectits operation. To interrogate or change states, see the .in-state() and .state() methods in Section 46, “Methods common to all ttk widgets” (p.145)
-.•If the widgetis in the disabled state,no user action will change the contents.
-•If the widget is  in the! Disabled state and also the readonly state, the user may change the contents by using the drop-down menu, but may not directly edit the contents.
+Methods on a ttk. Combobox include all those described in Section 46, “Methods common to all ttk widgets” (p.145), plus all the methods on theTkinter widget described in Section10, “The Entry widget” (p.41), plus:
+
+`.current([index])`
+
+To select one of the elements of the values option, pass the index of that element as the argument to this method. If you do not supply an argument, the returned value is the in dex of the current entry text in the values list, or-1if the current entry text is not in the values list.
+
+`.set(value)`
+
+Set the current text in the widget to value. 
+
+The states of a `ttk.Combobox` widget affect its operation. To interrogate or change states, see the `.in-state()` and `.state()` methods in Section 46, “Methods common to all ttk widgets” (p.145)
+If the widget is in the disabled state,no user action will change the contents.
+If the widget is  in the Disabled state and also the readonly state, the user may change the contents by using the drop-down menu, but may not directly edit the contents.
 
 
 
