@@ -442,7 +442,7 @@ Here are the options for the ttk.Button widget.
 
 | Command | Description |
 | --- | --- |
-| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. |
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. See section: [Standardizing appearance](#Standardizing-appearance) |
 | `command` | A function to be called when the button is pressed |
 | `compound` | If you provide both `image` and `text` options, the compound option specifies the position of the image relative to the text. The value may be `tk.TOP` (image above text), `tk.BOTTOM` (image below text), `tk.LEFT` (image to the left of the text), or `tk.RIGHT` (image to the right of the text). When you provide both image and text options but don't specify a compound option, the image will appear and the text will not. |
 | `cursor` | The cursor that will appear when the mouse is over the button; go to [Cursors](#Cursors) |
@@ -505,10 +505,10 @@ Here are the options for the ttk.Checkbutton widget.
 
 | Command | Description |
 | --- | --- |
-| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. |
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. See section: [Standardizing appearance](#Standardizing-appearance) |
 | `command` | A function to be called whenever the state of this checkbutton changes. |
 | `compound` | This option specifies the relative position of the image relative to the text when you specify both. The value maybe `tk.TOP` (image above text), `tk.BOTTOM` (image below text), `tk.LEFT` (image to the left of the text), or `tk.RIGHT` (image to the right of the text). If you provide both image and text options but do not specify a value for compound, only the image will appear. |
-| `cursor` | The cursor that will appear when the mouse is over the checkbutton. |
+| `cursor` | The cursor that will appear when the mouse is over the button; go to [Cursors](#Cursors) |
 | `image` | An image to appear on the checkbutton |
 | `offvalue` | By default, when a checkbutton is in the off (unchecked) state, the value of the associated variable is 0. You can use the `offvalue` option to specify a different value for the off state. |
 | `onvalue` | By default,when a checkbutton is in the on (checked) state, the value of the associated variable is 1. You can use the `onvalue` option to specify a different value for the on state. |
@@ -564,25 +564,27 @@ Not supported are the following methods of the Tkinter Checkbutton widget: `.des
 This widget is a combination of an Entry and a drop-down menu. In your application, you will see the usual text entry area, with a downward-pointing arrow. When the user clicks on the arrow, a drop-down menu appears. If the user clicks on one, that choice replaces the current contents of the entry. However, the user may still type text directly into the entry (when it has focus), or edit the current text.
 
 To create a ttk. Combobox widget as the child of a given parent widget:
+
 ```
 w = ttk.Combobox(parent, option=value, ...)
 ```
-| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. For an explanation of widget classes, see Section 27, “Standardizing appearance” (p.105).|
-| `cursor` | The cursor that will appear when the mouse is over the checkbutton;  See Sec-tion 5.8, “Cursors” (p.13).|
-| `exportselection` | By default, if you select text within an Entry widget, it is automatically exported to the clipboard. To avoid this exportation, use exportselection=0|
-| `height` | Use this option to specify a maximum number of rows that will appear in the drop-down menu; the default is  20. If there are more values than this number, thedrop-down menu will automatically include a vertical scrollbar. |
-| `justify` | This option specifies how the text will be positioned with in the entry area when it does not completely fill the area.Values may be tk.LEFT to left-justify ; tk.CENTER to center; or tk.RIGHT to right-justify. |
+
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. See section: [Standardizing appearance](#Standardizing-appearance) |
+| `cursor` | The cursor that will appear when the mouse is over the button; go to [Cursors](#Cursors) |
+| `exportselection` | By default, if you select text within an Entry widget, it is automatically exported to the clipboard. To avoid this exportation, use export selection=0|
+| `height` | Use this option to specify a maximum number of rows that will appear in the drop-down menu; the default is  20. If there are more values than this number, the drop-down menu will automatically include a vertical scrollbar. |
+| `justify` | This option specifies how the text will be positioned with in the entry area when it does not completely fill the area.Values may be `tk.LEFT` to left-justify ; `tk.CENTER` to center; or `tk.RIGHT` to right-justify. |
 | `postcommand` |You may use this option to supply a callback function that will be invoked when the user click son the down-arrow.This callback may change the values option; if so, the changes will appear in the drop-down menu.|
-| `style` |  The style to be used in rendering this checkbutton; see Section 49, “Using and customizing ttk styles” (p.147). |
-| `takefocus` | By default, a ttk. Checkbutton will be included in focus traversal; see Sec-tion 53, “Focus:routing keyboard input” (p.155). To remove the widget from focus traversal, use takefocus=Fals  |
+| `style` |  The style to be used in rendering this combobox. |
+| `takefocus` | By default, a ttk. Checkbutton will be included in focus traversal; see Section 53, “Focus:routing keyboard input” (p.155). To remove the widget from focus traversal, use `takefocus=False`  |
 | `textvariable` | A variable that controls the text that appears in the entry area; see Section 52, “Control variables: the values behind the widgets” (p.153) |
-| `validate` | You may use this option to request dynamic validation of the widget's text content. See Section 10.2, “Adding validation to an Entry widget” (p.45).  |
-| `validatecommand` | You may use this option to specify a callback function that dynamically validates the widget's text content. See Section 10.2, “Adding validation to an Entry widget” (p.45).  |
+| `validate` | You may use this option to request dynamic validation of the widget's text content. See Section [Adding validation to an Entry widget](#Adding-validation-to-an-Entry-widget)  |
+| `validatecommand` | You may use this option to specify a callback function that dynamically validates the widget's text content. See Section [Adding validation to an Entry widget](#Adding-validation-to-an-Entry-widget).  |
 | `values` | The choices that will appear in the drop-down menu, as a sequence of strings.|
 | `width` |This option specifies the width of the entry area as a number of characters. The actual width will be this number times the average width of a character in the effective font. The default value is 20.|
 | `xscrollcommand` | If the widget has an associated horizontal scrollbar, set this option to the. Set method of that scrollbar. |
 
-Methods on a ttk. Combobox include all those described in Section 46, “Methods common to all ttk widgets” (p.145), plus all the methods on theTkinter widget described in Section10, “The Entry widget” (p.41), plus:
+Methods on a ttk. Combobox include all those described in [Methods-common-to-all-tkk-widgets](#Methods-common-to-all-tkk-widgets), plus:
 
 `.current([index])`
 
@@ -592,13 +594,126 @@ To select one of the elements of the values option, pass the index of that eleme
 
 Set the current text in the widget to value. 
 
-The states of a `ttk.Combobox` widget affect its operation. To interrogate or change states, see the `.in-state()` and `.state()` methods in Section 46, “Methods common to all ttk widgets” (p.145)
+The states of a `ttk.Combobox` widget affect its operation. To interrogate or change states, see the `.in-state()` and `.state()` methods in Section [Methods-common-to-all-tkk-widgets](#Methods-common-to-all-tkk-widgets)
 If the widget is in the disabled state,no user action will change the contents.
 If the widget is  in the Disabled state and also the readonly state, the user may change the contents by using the drop-down menu, but may not directly edit the contents.
 
-
-
 ## Entry
+
+The purpose of an Entry widget is to allow the user to enter or edit a single line of text.
+
+To create a `ttk.Entry` widget as the child of a given parent widget:
+
+```
+w = ttk.Entry(parent, option=value, ...)
+```
+
+**Table 40. ttk.Entry options**
+
+| Command | Description |
+| --- | --- |
+| `class_` | The widget class name. This may be specified when the widget is created, but cannot be changed later. See section: [Standardizing appearance](#Standardizing-appearance) |
+| `cursor` | The cursor that will appear when the mouse is over the checkbutton. |
+| `exportselection` | By default, if you select text within an Entry widget, it is automatically exported to the clipboard. To avoid this exportation, use `exportselection=0`. |
+| `font` | Configure this option using a style. |
+| `invalidcommand` | You may set this option to a callback function that will be called whenever validation fails (that is,when the validate command returns a 0). See Section: [Adding validation to an Entry widget](#Adding-validation-to-an-Entry-widget) |
+| `justify` | This option specifies how the text will be positioned with in the entry area when it does not completely fill the area.Values may be `tk.LEFT` to left-justify ; `tk.CENTER` to center; or `tk.RIGHT` to right-justify. |
+| `show` | To protect fields such as passwords from being visible on the screen, set this option to a string,whose first character will be substituted for each of the actual show characters in the field. For example, if the field contains “sesame” but you have specified show='*', the field will appear as “******”. |
+| `style` | The style to be used in rendering this entry. |
+| `takefocus` | By default, a `ttk.Entry` will be included in focus traversal; see Section 53, “Focus: routing keyboard input” (p. 155). To remove the widget from focus traversal, use `takefocus=False`. |
+| `textvariable` | A variable that controls the text that appears in the entry area; see Section 52, “Control variables: the values behind the widgets” |
+| `validate` | You may use this option to specify a callback function that dynamically validates the widget's text content. See Section: [Adding validation to an Entry widget](#Adding-validation-to-an-Entry-widget) |
+| `validatecommand` | See Section: [Adding validation to an Entry widget](#Adding-validation-to-an-Entry-widget) |
+| `width` | This option specifies the width of the entry area as a number of characters. The actual width will be this number times the average width of a character in the effective font. The default value is 20. |
+| `xscrollcommand` | If the widget has an associated horizontal scrollbar, set this option to the .set method of that scrollbar. |
+
+Methods on a `ttk.Entry` include all those described in [Methods-common-to-all-tkk-widgets](#Methods-common-to-all-tkk-widgets), plus:
+
+`.delete(first, last=None)`
+
+Deletes characters from the widget, starting with the one at index first, up to but not including
+the character at position last. If the second argument is omitted, onlythe single character at position
+first is deleted.
+
+`.get()`
+
+Returns the entry's current text as a string.
+
+`.icursor(index)`
+
+Set the insertion cursor just before the character at the given index.
+
+`.index(index)`
+
+Shift the contents of the entry so that the character at the given index is the leftmost visible character.
+Has no effect if the text fits entirely within the entry.
+
+`.insert(index, s)`
+
+Inserts string s before the character at the given index.
+
+`.scan_dragto(x)`
+
+See the scan_mark method below.
+
+`.scan_mark(x)`
+
+Use this option to set up fast scanning of the contents of the Entry widget that has a scrollbar that supports horizontal scrolling.
+To implement this feature, bind the mouse's button-down event to a handler that calls
+scan_mark(x), where x is the current mouse x position. Then bind the <Motion> event to a
+handler that calls scan_dragto(x), where x is the current mouse x position. The scan_dragto
+method scrolls the contents of the Entry widget continuously at a rate proportional to the horizontal
+distance between the position at the time of the scan_mark call and the current position.
+
+`.select_adjust(index)`
+
+This method is used to make sure that the selection includes the character at the specified index.
+If the selection already includes that character, nothing happens. If not, the selection is expanded
+from its current position (if any) to include position index.
+
+`.select_clear()`
+
+Clears the selection. If there isn't currently a selection, has no effect.
+
+`.select_from(index)`
+
+Sets the tk.ANCHOR index position to the character selected by index, and selects that character.
+
+`.select_present()`
+
+If there is a selection, returns true, else returns false.
+
+`.select_range(start, end)`
+
+Sets the selection under program control. Selects the text starting at the start index, up to but
+not including the character at the end index. The start position must be before the end position.
+44 Tkinter 8.5 reference New Mexico Tech Computer Center
+To select all the text in an entry widget e, use e.select_range(0, tk.END).
+
+`.select_to(index)`
+
+Selects all the text from the tk.ANCHOR position up to but not including the character at the given
+index.
+
+`.xview(index)`
+
+Same as .xview(). This method is useful in linking the Entry widget to a horizontal scrollbar.
+
+`.xview_moveto(f)`
+
+Positions the text in the entry so that the character at position f,relative to the entire text, is positioned
+at the left edge of the window. The f argument must be in the range [0,1], where 0 means the left
+end of the text and 1 the right end.
+
+`.xview_scroll(number, what)`
+
+Used to scroll the entry horizontally. The what argument must be either tk.UNITS, to scroll by
+character widths, or tk.PAGES, to scroll by chunks the size of the entry widget. The number is
+positive to scroll left to right, negative to scroll right to left. For example, for an entry widget e,
+e.xview_scroll(-1, tk.PAGES) would move the text one “page” to the right, and
+e.xview_scroll(4, tk.UNITS) would move the text four characters to the left.
+
+---------------------- Bura qədər 16:06 21.09.2020 hemidvs
 ## Frame
 ## Label
 ## Label-frame
@@ -613,6 +728,8 @@ If the widget is  in the Disabled state and also the readonly state, the user ma
 ## Sizegrip
 ## Tree-view
 ## Styling-tkk-widgets
+## Standardizing-appearance
+## Adding-validation-to-an-Entry-widget
 ## Methods-common-to-all-tkk-widgets
 
 
